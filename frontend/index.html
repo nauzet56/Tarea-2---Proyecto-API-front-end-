@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Enviar Nuevo Formulario</h2>
+        <form id="formularioContacto">
+            <input type="text" id="nombre" placeholder="Nombre" required>
+            <input type="email" id="email" placeholder="Correo Electrónico" required>
+            <input type="text" id="asunto" placeholder="Asunto" required>
+            <textarea id="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            <button type="submit">Enviar al Backend</button>
+        </form>
+        <hr>
+        <h2>Mensajes en la Base de Datos</h2>
+        <button id="btnCargar">Actualizar Lista</button>
+        <div id="listaMensajes"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
