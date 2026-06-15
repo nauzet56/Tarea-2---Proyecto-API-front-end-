@@ -49,10 +49,10 @@ async function cargarFormularios() {
             const card = document.createElement('div');
             card.className = 'card';
             card.innerHTML = `
-                <h3>👤 ${form.nombre} (${form.email})</h3>
+                <h3> ${form.nombre} (${form.email})</h3>
                 <p><strong>Asunto:</strong> ${form.asunto}</p>
                 <p><strong>Mensaje:</strong> ${form.mensaje}</p>
-                <small>📅 ${new Date(form.fecha_creacion).toLocaleString()}</small>
+                <small> ${new Date(form.fecha_creacion).toLocaleString()}</small>
             `;
             lista.appendChild(card);
         });
